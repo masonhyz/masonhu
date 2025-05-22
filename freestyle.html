@@ -1,0 +1,166 @@
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mason Hu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="assets/Adobe Express - file.svg" alt="Logo" class="logo" /></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="freestyle.html" class="active">Freestyle</a>
+    </nav>
+  </header>
+
+  <main class="freestyle-section">
+    <h1>My Freestyle Tricktionary</h1>
+    <h3>General Notes</h3>
+    <ul class="freestyle-notes">
+      <li>Freestyle is a the sport where individuals express themselves creatively using a soccer ball.</li>
+      <li>Below are some skills and tricks that I unlocked. I have not been training for 4 years due to university, but I still look back on the few months in high school when I skipped class and trained 6 hours a day.</li>
+      <li>I am currently restarting my freestyle journey and am registered for the Canadian freestyle soccer championship in June 2025. Tag along if you are interested too!</li>
+    </ul>
+    
+  
+    <div class="freestyle-split">
+      <!-- LEFT: Move Categories -->
+      <div class="freestyle-left">
+        <section class="category">
+          <h2>≤1 Rev</h2>
+          <p>
+            <a href="#" onclick="playVideo('assets/freestyle/1rev/atw_in.mov')">ATW In</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/1rev/atw_out.mov')">ATW Out</a>,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/htw_in.mov')">HTW</a>, -->
+            HTW,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/htw_out.mov')">Reverse HTW</a>, -->
+            Reverse HTW,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/hatw_in.mov')">HATW</a>, -->
+            HATW,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/hatw.mov')">Reverse HATW</a>, -->
+            Reverse HATW,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/co.mov')">CO</a>, -->
+            CO,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/xover.mov')">X-Over</a>, -->
+             X-Over,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/reverse_co.mov')">Reverse CO</a>, -->
+             Reverse CO, 
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/katw.mov')">KATW</a> -->
+             KATW
+          </p>
+        </section>
+  
+        <section class="category">
+          <h2>1.5 Rev</h2>
+          <p>
+            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/matw.mov')">MATW</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/tatw.mov')">TATW</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/amatw.mov')">AMATW</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/atatw.mov')">ATATW</a>,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/1.5rev/yatw.mov')">YATW</a> -->
+             YATW
+          </p>
+        </section>
+  
+        <section class="category">
+          <h2>2 Rev</h2>
+          <p>
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/2rev/latw_in.mov')">LATW In</a>, -->
+             LATW,
+            <a href="#" onclick="playVideo('assets/freestyle/2rev/latw_out.mov')">LATW Out</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/2rev/htatw.mov')">HTATW</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/2rev/hmatw.mov')">HMATW</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/2rev/alatw.mov')">ALATW</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/2rev/magellan.MP4')">Magellan</a>
+          </p>
+        </section>
+  
+        <section class="category">
+          <h2>2.5 Rev</h2>
+          <p>
+            <a href="#" onclick="playVideo('assets/freestyle/2.5rev/lmatw.mov')">LMATW</a>
+          </p>
+        </section>
+  
+        <section class="category">
+          <h2>3 Rev</h2>
+          <p>Coming soon</p>
+        </section>
+  
+        <section class="category">
+          <h2>Abbas Tricks</h2>
+          <p>
+            <a href="#" onclick="playVideo('assets/freestyle/abbas/aatw_in.mov')">AATW In</a>,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/abbas/aatw_out.mov')">AATW Out</a>, -->
+             AATW Out,
+            <a href="#" onclick="playVideo('assets/freestyle/abbas/timo_atw.mov')">Timo ATW</a>,
+            <a href="#" onclick="playVideo('assets/freestyle/abbas/batw.mov')">BATW</a>,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/abbas/laatw.mov')">LAATW</a> -->
+             LAATW
+          </p>
+        </section>
+  
+        <section class="category">
+          <h2>Combos</h2>
+          <p>
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/combos/amatw_nt.mov')">AMATW NT</a>, -->
+             AMATW NT,
+            <!-- <a href="#" onclick="playVideo('assets/freestyle/combos/latw_htw_amatw.mov')">LATW HTW AMATW</a> -->
+             LATW HTW AMATW
+          </p>
+        </section>
+      </div>
+  
+      <!-- RIGHT: Video Player -->
+      <div class="freestyle-right">
+        <video id="videoPlayer" controls>
+          <source id="videoSource" src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+
+  <script>
+    function openLightbox(src) {
+      const lightbox = document.getElementById("lightbox");
+      const video = document.getElementById("lightboxVideo");
+      const source = document.getElementById("lightboxVideoSource");
+  
+      source.src = src;
+      video.load();
+      lightbox.style.display = "flex";
+      video.play();
+    }
+  
+    function closeLightbox() {
+      const lightbox = document.getElementById("lightbox");
+      const video = document.getElementById("lightboxVideo");
+  
+      video.pause();
+      video.currentTime = 0;
+      lightbox.style.display = "none";
+    }
+  </script>
+
+</body>
+
+<script>
+  function playVideo(src) {
+    const video = document.getElementById("videoPlayer");
+    const source = document.getElementById("videoSource");
+
+    source.src = src;
+    video.load();
+    video.play();
+  }
+</script>
+
+
+</html>

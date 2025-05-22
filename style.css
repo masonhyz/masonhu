@@ -1,0 +1,266 @@
+body {
+  background-image: url('assets/May 21, 2025, 10_00_46 PM.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(0, 0, 0);
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.521);
+  z-index: -1;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 1em;
+  font-size: 1.2em;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+main {
+  text-align: center;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  color: #4F4F4F;
+  margin-bottom: 1em;
+}
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  max-width: 1100px;
+  margin: 2em auto;
+  padding: 0 2em;
+  text-align: left;
+}
+
+.about img {
+  width: 325px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about div {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+.info {
+  max-width: 1100px;
+  margin: 3em auto;
+  padding: 0 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #003268;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.research-list {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.research-list li {
+  margin-bottom: 1em;
+}
+
+.research-list strong {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.2em;
+}
+
+.research-list .supervisor {
+  display: block;
+  font-size: 0.9em;
+  color: #000000;
+  margin-top: 0.3em;
+}
+
+.freestyle-section {
+  max-width: 1100px;
+  margin: 2em auto;
+  padding: 2em;
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: left;
+  background-color: #ffffff29;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.freestyle-section h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.freestyle-section h2 {
+  margin-top: 2em;
+  color: #000000;
+}
+
+.freestyle-section h3 {
+  margin-left: 1.5em;
+}
+
+.freestyle-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.freestyle-section li {
+  margin: 0.5em 0;
+}
+
+.freestyle-notes {
+  list-style-type: disc !important;
+  margin-left: 3em;
+}
+
+.freestyle-notes li {
+  margin-bottom: 1em;
+}
+
+.category h2 {
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  color: #000000;
+}
+
+.category p {
+  font-size: 1em;
+  padding-left: 1.5em;
+}
+
+.category p a {
+  color: #003268;
+  text-decoration: none;
+  margin-right: 0em;
+  font-size: 1em;
+}
+
+.category p a:hover {
+  text-decoration: underline;
+}
+
+.freestyle-split {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 2em;
+  gap: 2em;
+}
+
+.freestyle-left {
+  flex: 1;
+  margin-right: 5em;
+}
+
+.freestyle-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.freestyle-right video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.lightbox-content video {
+  width: 95%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .freestyle-split {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .freestyle-left {
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+  .freestyle-right video {
+    max-width: 80%;
+  }
+}
