@@ -246,3 +246,87 @@ a:hover {
     max-width: 80%;
   }
 }
+
+
+
+
+/* --- Lightbox Styles --- */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.95);
+}
+
+.lightbox-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 90%;
+  margin: auto;
+}
+
+.lightbox .slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lightbox .slide.active {
+  display: block;
+}
+
+.lightbox .slide img {
+  max-width: 50%;
+  max-height: 40vh;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.lightbox .slide figcaption {
+  margin-top: 0.5em;
+  font-size: 1rem;
+  color: #ddd;
+  text-align: center;
+}
+
+.lightbox .prev,
+.lightbox .next,
+.lightbox .close {
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.lightbox .close {
+  top: 1rem;
+  right: 2rem;
+}
+
+.lightbox .prev {
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+}
+
+.lightbox .next {
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover,
+.lightbox .close:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

@@ -121,32 +121,64 @@
         </video>
       </div>
     </div>
+
+    <h3>Update</h3>
+    <ul class="freestyle-notes">
+      <li>I was ranked 7th in the 2025 Canadian freestyle soccer championship! See <a href="#" onclick="openLightbox(); return false;">photos</a>.</li>
+    </ul>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="next" onclick="changeSlide(1)">&#10095;</span>
+
+      <div class="lightbox-content">
+        <div class="slide active">
+          <img src="assets/freestyle/ollie.jpeg" alt="Photo 1">
+          <figcaption>2x Canadian champ Ollie</figcaption>
+        </div>
+        <div class="slide">
+          <img src="assets/freestyle/7th in canada.jpeg" alt="Photo 2">
+          <figcaption>7th in Canada baby</figcaption>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+
+      function openLightbox() {
+        document.getElementById("lightbox").style.display = "block";
+        showSlide(currentSlide);
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+
+      function changeSlide(n) {
+        currentSlide += n;
+        const slides = document.querySelectorAll(".slide");
+        if (currentSlide >= slides.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+        showSlide(currentSlide);
+      }
+
+      function showSlide(index) {
+        const slides = document.querySelectorAll(".slide");
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+      }
+    </script>
+
+
+
+
+
   </main>
   
   
-  
-
-  <script>
-    function openLightbox(src) {
-      const lightbox = document.getElementById("lightbox");
-      const video = document.getElementById("lightboxVideo");
-      const source = document.getElementById("lightboxVideoSource");
-  
-      source.src = src;
-      video.load();
-      lightbox.style.display = "flex";
-      video.play();
-    }
-  
-    function closeLightbox() {
-      const lightbox = document.getElementById("lightbox");
-      const video = document.getElementById("lightboxVideo");
-  
-      video.pause();
-      video.currentTime = 0;
-      lightbox.style.display = "none";
-    }
-  </script>
 
 </body>
 
