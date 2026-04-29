@@ -2,14 +2,14 @@
    DESIGN TOKENS
    ===================== */
 :root {
-  --bg:           #06060b;
-  --bg-card:      #0c0c16;
-  --bg-hover:     #111120;
-  --border:       rgba(255,255,255,0.06);
+  --bg:           #080705;
+  --bg-card:      #100e09;
+  --bg-hover:     #181410;
+  --border:       rgba(255,235,180,0.06);
   --border-hover: rgba(251,191,36,0.35);
-  --text:         #e2e2f0;
-  --text-dim:     #8888aa;
-  --text-muted:   #4a4a6a;
+  --text:         #ede8dc;
+  --text-dim:     #9a8f78;
+  --text-muted:   #52493a;
   --accent:       #fbbf24;
   --accent-glow:  rgba(251,191,36,0.1);
   --accent-dim:   rgba(251,191,36,0.4);
@@ -61,8 +61,8 @@ body {
   z-index: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+    linear-gradient(rgba(255,220,100,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,220,100,0.018) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
