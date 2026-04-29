@@ -6,13 +6,13 @@
   --bg-card:      #0c0c16;
   --bg-hover:     #111120;
   --border:       rgba(255,255,255,0.06);
-  --border-hover: rgba(167,139,250,0.35);
+  --border-hover: rgba(251,191,36,0.35);
   --text:         #e2e2f0;
   --text-dim:     #8888aa;
   --text-muted:   #4a4a6a;
-  --accent:       #a78bfa;
-  --accent-glow:  rgba(167,139,250,0.1);
-  --accent-dim:   rgba(167,139,250,0.4);
+  --accent:       #fbbf24;
+  --accent-glow:  rgba(251,191,36,0.1);
+  --accent-dim:   rgba(251,191,36,0.4);
   --font-sans:    'Space Grotesk', system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', monospace;
   --header-h:     64px;
@@ -216,7 +216,7 @@ footer span {
   line-height: 0.88;
   letter-spacing: -0.04em;
   margin-bottom: 1.75rem;
-  background: linear-gradient(140deg, #ffffff 10%, #c4b5fd 55%, #7c3aed 100%);
+  background: linear-gradient(140deg, #ffffff 10%, #fde68a 55%, #d97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -273,7 +273,7 @@ footer span {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(140deg, transparent 50%, rgba(167,139,250,0.12) 100%);
+  background: linear-gradient(140deg, transparent 50%, rgba(251,191,36,0.1) 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -433,7 +433,7 @@ footer span {
   letter-spacing: -0.04em;
   line-height: 0.9;
   margin: 1rem 0 1.5rem;
-  background: linear-gradient(140deg, #ffffff 10%, #c4b5fd 55%, #7c3aed 100%);
+  background: linear-gradient(140deg, #ffffff 10%, #fde68a 55%, #d97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
