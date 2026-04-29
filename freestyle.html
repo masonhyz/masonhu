@@ -1,197 +1,259 @@
-<link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mason Hu</title>
+  <title>Freestyle · Mason Hu</title>
+  <meta name="description" content="Mason Hu's freestyle soccer tricktionary — every trick unlocked, with video clips." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/Adobe Express - file.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="assets/Adobe Express - file.svg">
 </head>
 <body>
+
+  <div class="noise"></div>
+  <div class="grid-overlay"></div>
+
   <header>
-    <a href="index.html"><img src="assets/Adobe Express - file.svg" alt="Logo" class="logo" /></a>
+    <a href="index.html" class="wordmark">MH</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="freestyle.html" class="active">Freestyle</a>
     </nav>
   </header>
 
-  <main class="freestyle-section">
-    <h1>My Freestyle Tricktionary</h1>
-    <h3>General Notes</h3>
-    <ul class="freestyle-notes">
-      <li>Freestyle soccer is a sport where individuals express themselves creatively using a soccer ball.</li>
-      <li>Below are some skills and tricks that I unlocked. Haven't really been training for 4 years (thanks, UofT), but back in high school I used to skip class and train 8 hours a day. See more <a href="https://space.bilibili.com/319150701" target="_blank">here</a>.</li>
-      <li>I am currently restarting my freestyle journey and registered for the Canadian freestyle soccer championship in June 2025. Tag along if you are interested too!</li>
-    </ul>
-    
-  
-    <div class="freestyle-split">
-      <!-- LEFT: Move Categories -->
-      <div class="freestyle-left">
-        <section class="category">
-          <h2>≤1 Rev</h2>
-          <p>
-            <a href="#" onclick="playVideo('assets/freestyle/1rev/atw_in.mov')">ATW In</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/1rev/atw_out.mov')">ATW Out</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/1rev/htw.MOV')">HTW</a>,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/htw_out.mov')">Reverse HTW</a>, -->
-            Reverse HTW,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/hatw_in.mov')">HATW</a>, -->
-            HATW,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/hatw.mov')">Reverse HATW</a>, -->
-            Reverse HATW,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/co.mov')">CO</a>, -->
-            CO,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/xover.mov')">X-Over</a>, -->
-             X-Over,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/reverse_co.mov')">Reverse CO</a>, -->
-             Reverse CO, 
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1rev/katw.mov')">KATW</a> -->
-             KATW
-          </p>
-        </section>
-  
-        <section class="category">
-          <h2>1.5 Rev</h2>
-          <p>
-            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/matw.mov')">MATW</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/tatw.mov')">TATW</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/amatw.mov')">AMATW</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/1.5rev/atatw.mov')">ATATW</a>,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/1.5rev/yatw.mov')">YATW</a> -->
-             YATW
-          </p>
-        </section>
-  
-        <section class="category">
-          <h2>2 Rev</h2>
-          <p>
-            <a href="#" onclick="playVideo('assets/freestyle/2rev/latw_in.mov')">LATW In</a>,
-             <!-- LATW, -->
-            <a href="#" onclick="playVideo('assets/freestyle/2rev/latw_out.mov')">LATW Out</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/2rev/htatw.mov')">HTATW</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/2rev/hmatw.mov')">HMATW</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/2rev/alatw.mov')">ALATW</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/2rev/magellan.MP4')">Magellan</a>
-          </p>
-        </section>
-  
-        <section class="category">
-          <h2>2.5 Rev</h2>
-          <p>
-            <a href="#" onclick="playVideo('assets/freestyle/2.5rev/lmatw.mov')">LMATW</a>
-          </p>
-        </section>
-  
-        <section class="category">
-          <h2>3 Rev</h2>
-          <p>Coming soon</p>
-        </section>
-  
-        <section class="category">
-          <h2>Abbas Tricks</h2>
-          <p>
-            <a href="#" onclick="playVideo('assets/freestyle/abbas/aatw_in.mov')">AATW In</a>,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/abbas/aatw_out.mov')">AATW Out</a>, -->
-             AATW Out,
-            <a href="#" onclick="playVideo('assets/freestyle/abbas/timo_atw.mov')">Timo ATW</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/abbas/batw.mov')">BATW</a>,
-            <!-- <a href="#" onclick="playVideo('assets/freestyle/abbas/laatw.mov')">LAATW</a> -->
-             LAATW
-          </p>
-        </section>
-  
-        <section class="category">
-          <h2>Combos</h2>
-          <p>
-            <a href="#" onclick="playVideo('assets/freestyle/combos/amatw_nt.MOV')">AMATW NT</a>,
-            <a href="#" onclick="playVideo('assets/freestyle/combos/latw_htw_amatw.mp4')">LATW HTW AMATW</a>
-          </p>
-        </section>
+  <main>
+
+    <!-- ── PAGE HERO ──────────────────────────── -->
+    <section class="page-hero fade-in">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Freestyle Soccer &nbsp;·&nbsp; Around-the-World Specialist
       </div>
-  
-      <!-- RIGHT: Video Player -->
-      <div class="freestyle-right">
-        <video id="videoPlayer" controls>
-          <source id="videoSource" src="" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
+      <h1 class="page-title">Tricktionary</h1>
+      <p class="page-desc">
+        A living record of every trick unlocked. High school Mason trained 8 hrs a day (class optional).
+        After a 4-year UofT hiatus, the comeback is on —
+        finished <strong>7th at the 2025 Canadian Championship</strong>.
+        More on Bilibili <a href="https://space.bilibili.com/319150701" target="_blank" rel="noopener" class="btn" style="font-size:0.68rem;padding:0.3rem 0.6rem;">here →</a>
+      </p>
+    </section>
 
-    <h3>Update</h3>
-    <ul class="freestyle-notes">
-      <li>I was ranked 7th in the 2025 Canadian freestyle soccer championship! See <a href="#" onclick="openLightbox(); return false;">photos</a>.</li>
-    </ul>
+    <!-- ── TRICK LIST + VIDEO ─────────────────── -->
+    <section class="section">
+      <div class="freestyle-layout">
 
-    <div id="lightbox" class="lightbox">
-      <span class="close" onclick="closeLightbox()">&times;</span>
-      <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
-      <span class="next" onclick="changeSlide(1)">&#10095;</span>
+        <!-- LEFT: categories -->
+        <div class="trick-list" id="trickList">
 
-      <div class="lightbox-content">
-        <div class="slide active">
-          <img src="assets/freestyle/Ollie.jpeg" alt="Photo 1">
-          <figcaption>2x Canadian champ Ollie</figcaption>
+          <div class="trick-category open">
+            <div class="trick-cat-header" onclick="toggleCat(this)">
+              <span class="trick-cat-title">≤ 1 Rev</span>
+              <span class="trick-cat-arrow">›</span>
+            </div>
+            <div class="trick-cat-body">
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/1rev/atw_in.mov','ATW In'); return false;">ATW In</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/1rev/atw_out.mov','ATW Out'); return false;">ATW Out</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/1rev/htw.MOV','HTW'); return false;">HTW</a>
+              <span class="trick-tag locked">Reverse HTW</span>
+              <span class="trick-tag locked">HATW</span>
+              <span class="trick-tag locked">Reverse HATW</span>
+              <span class="trick-tag locked">CO</span>
+              <span class="trick-tag locked">X-Over</span>
+              <span class="trick-tag locked">Reverse CO</span>
+              <span class="trick-tag locked">KATW</span>
+            </div>
+          </div>
+
+          <div class="trick-category">
+            <div class="trick-cat-header" onclick="toggleCat(this)">
+              <span class="trick-cat-title">1.5 Rev</span>
+              <span class="trick-cat-arrow">›</span>
+            </div>
+            <div class="trick-cat-body">
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/1.5rev/matw.mov','MATW'); return false;">MATW</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/1.5rev/tatw.mov','TATW'); return false;">TATW</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/1.5rev/amatw.mov','AMATW'); return false;">AMATW</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/1.5rev/atatw.mov','ATATW'); return false;">ATATW</a>
+              <span class="trick-tag locked">YATW</span>
+            </div>
+          </div>
+
+          <div class="trick-category">
+            <div class="trick-cat-header" onclick="toggleCat(this)">
+              <span class="trick-cat-title">2 Rev</span>
+              <span class="trick-cat-arrow">›</span>
+            </div>
+            <div class="trick-cat-body">
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/2rev/latw_in.mov','LATW In'); return false;">LATW In</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/2rev/latw_out.mov','LATW Out'); return false;">LATW Out</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/2rev/htatw.mov','HTATW'); return false;">HTATW</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/2rev/hmatw.mov','HMATW'); return false;">HMATW</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/2rev/alatw.mov','ALATW'); return false;">ALATW</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/2rev/magellan.MP4','Magellan'); return false;">Magellan</a>
+            </div>
+          </div>
+
+          <div class="trick-category">
+            <div class="trick-cat-header" onclick="toggleCat(this)">
+              <span class="trick-cat-title">2.5 Rev</span>
+              <span class="trick-cat-arrow">›</span>
+            </div>
+            <div class="trick-cat-body">
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/2.5rev/lmatw.mov','LMATW'); return false;">LMATW</a>
+            </div>
+          </div>
+
+          <div class="trick-category">
+            <div class="trick-cat-header" onclick="toggleCat(this)">
+              <span class="trick-cat-title">3 Rev</span>
+              <span class="trick-cat-arrow">›</span>
+            </div>
+            <div class="trick-cat-body">
+              <span class="trick-tag locked" style="opacity:0.3;">Coming soon</span>
+            </div>
+          </div>
+
+          <div class="trick-category">
+            <div class="trick-cat-header" onclick="toggleCat(this)">
+              <span class="trick-cat-title">Abbas Tricks</span>
+              <span class="trick-cat-arrow">›</span>
+            </div>
+            <div class="trick-cat-body">
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/abbas/aatw_in.mov','AATW In'); return false;">AATW In</a>
+              <span class="trick-tag locked">AATW Out</span>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/abbas/timo_atw.mov','Timo ATW'); return false;">Timo ATW</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/abbas/batw.mov','BATW'); return false;">BATW</a>
+              <span class="trick-tag locked">LAATW</span>
+            </div>
+          </div>
+
+          <div class="trick-category">
+            <div class="trick-cat-header" onclick="toggleCat(this)">
+              <span class="trick-cat-title">Combos</span>
+              <span class="trick-cat-arrow">›</span>
+            </div>
+            <div class="trick-cat-body">
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/combos/amatw_nt.MOV','AMATW NT'); return false;">AMATW NT</a>
+              <a class="trick-tag" href="#" onclick="playVideo('assets/freestyle/combos/latw_htw_amatw.mp4','LATW HTW AMATW'); return false;">LATW HTW AMATW</a>
+            </div>
+          </div>
+
         </div>
-        <div class="slide">
-          <img src="assets/freestyle/7th in canada.jpeg" alt="Photo 2">
-          <figcaption>7th in Canada baby</figcaption>
+
+        <!-- RIGHT: video player -->
+        <div class="video-panel">
+          <div class="video-wrapper">
+            <video id="videoPlayer" controls preload="none">
+              <source id="videoSource" src="" type="video/mp4" />
+            </video>
+            <div class="video-placeholder" id="videoPlaceholder">
+              <span>Select a trick →</span>
+            </div>
+          </div>
+          <p id="videoLabel" style="font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-top:0.75rem;text-align:center;min-height:1.2em;"></p>
         </div>
+
       </div>
-    </div>
+    </section>
 
-    <script>
-      let currentSlide = 0;
-
-      function openLightbox() {
-        document.getElementById("lightbox").style.display = "block";
-        showSlide(currentSlide);
-      }
-
-      function closeLightbox() {
-        document.getElementById("lightbox").style.display = "none";
-      }
-
-      function changeSlide(n) {
-        currentSlide += n;
-        const slides = document.querySelectorAll(".slide");
-        if (currentSlide >= slides.length) currentSlide = 0;
-        if (currentSlide < 0) currentSlide = slides.length - 1;
-        showSlide(currentSlide);
-      }
-
-      function showSlide(index) {
-        const slides = document.querySelectorAll(".slide");
-        slides.forEach((slide, i) => {
-          slide.classList.toggle("active", i === index);
-        });
-      }
-    </script>
-
-
-
-
+    <!-- ── CHAMPIONSHIP ───────────────────────── -->
+    <section class="gallery-section section">
+      <div class="section-header">
+        <span class="section-num">↗</span>
+        <h2>2025 Canadian Championship</h2>
+      </div>
+      <p style="font-size:0.9rem;color:var(--text-dim);max-width:480px;line-height:1.8;">
+        Placed 7th in Canada at my comeback competition.
+        Wild experience — more to come.
+      </p>
+      <button class="gallery-trigger" onclick="openLightbox()">
+        View photos &nbsp;›
+      </button>
+    </section>
 
   </main>
-  
-  
+
+  <footer>
+    <span>© 2025 Mason Hu</span>
+    <span>Freestyle Soccer</span>
+  </footer>
+
+  <!-- ── LIGHTBOX ──────────────────────────────── -->
+  <div id="lightbox" class="lightbox">
+    <span class="lb-close" onclick="closeLightbox()">✕</span>
+    <span class="lb-btn lb-prev" onclick="changeSlide(-1)">‹</span>
+    <span class="lb-btn lb-next" onclick="changeSlide(1)">›</span>
+    <div class="lightbox-inner">
+      <div class="slide active">
+        <img src="assets/freestyle/Ollie.jpeg" alt="2x Canadian champ Ollie" />
+        <figcaption>2× Canadian champ Ollie</figcaption>
+      </div>
+      <div class="slide">
+        <img src="assets/freestyle/7th in canada.jpeg" alt="7th in Canada" />
+        <figcaption>7th in Canada, baby</figcaption>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ── Intersection observer ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in, .fade-in-x').forEach(el => io.observe(el));
+
+    /* ── Category accordion ── */
+    function toggleCat(header) {
+      const cat = header.closest('.trick-category');
+      cat.classList.toggle('open');
+    }
+
+    /* ── Video player ── */
+    function playVideo(src, label) {
+      const video  = document.getElementById('videoPlayer');
+      const source = document.getElementById('videoSource');
+      const ph     = document.getElementById('videoPlaceholder');
+      const lbl    = document.getElementById('videoLabel');
+
+      source.src = src;
+      video.load();
+      video.play();
+      ph.classList.add('hidden');
+      lbl.textContent = label || '';
+
+      document.querySelectorAll('.trick-tag').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    /* ── Lightbox ── */
+    let slide = 0;
+    function openLightbox() {
+      document.getElementById('lightbox').classList.add('open');
+      showSlide(slide);
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+    function changeSlide(n) {
+      const slides = document.querySelectorAll('#lightbox .slide');
+      slide = (slide + n + slides.length) % slides.length;
+      showSlide(slide);
+    }
+    function showSlide(i) {
+      document.querySelectorAll('#lightbox .slide').forEach((s, idx) => {
+        s.classList.toggle('active', idx === i);
+      });
+    }
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+  </script>
 
 </body>
-
-<script>
-  function playVideo(src) {
-    const video = document.getElementById("videoPlayer");
-    const source = document.getElementById("videoSource");
-
-    source.src = src;
-    video.load();
-    video.play();
-  }
-</script>
-
-
 </html>
