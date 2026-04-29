@@ -433,11 +433,11 @@ footer span {
 }
 
 .page-title {
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
   font-weight: 700;
   letter-spacing: -0.04em;
-  line-height: 0.9;
-  margin: 1rem 0 1.5rem;
+  line-height: 1.1;
+  margin: 1rem 0 1.75rem;
   background: linear-gradient(140deg, #ffffff 15%, #aaaaaa 55%, #555555 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
