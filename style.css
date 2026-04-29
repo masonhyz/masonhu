@@ -7,9 +7,9 @@
   --bg-hover:     #181410;
   --border:       rgba(255,235,180,0.06);
   --border-hover: rgba(251,191,36,0.35);
-  --text:         #ede8dc;
-  --text-dim:     #9a8f78;
-  --text-muted:   #52493a;
+  --text:         #f2ede2;
+  --text-dim:     #c4b89e;
+  --text-muted:   #8a7d68;
   --accent:       #fbbf24;
   --accent-glow:  rgba(251,191,36,0.1);
   --accent-dim:   rgba(251,191,36,0.4);
@@ -211,9 +211,9 @@ footer span {
 }
 
 .hero-name {
-  font-size: clamp(4.5rem, 10vw, 8.5rem);
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
   font-weight: 700;
-  line-height: 0.88;
+  line-height: 1.1;
   letter-spacing: -0.04em;
   margin-bottom: 1.75rem;
   background: linear-gradient(140deg, #ffffff 10%, #fde68a 55%, #d97706 100%);
