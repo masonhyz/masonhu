@@ -1,45 +1,31 @@
-<link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
-
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="KnzfO6pwhXBo5OdICUSN4D-E5gCM_NfSRwavx7_7UOM" />
-  <meta name="description" content="Mason (Yizhi) Hu's personal website">
-  <title>Mason Hu | AI &amp; Neuroimaging</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="assets/Adobe Express - file.svg">
-</head> -->
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="KnzfO6pwhXBo5OdICUSN4D-E5gCM_NfSRwavx7_7UOM" />
 
-  <!-- SEO -->
   <title>Mason Hu | AI &amp; Neuroimaging</title>
   <meta name="description" content="Mason Hu is a Stanford ICME student working on AI for neuroimaging." />
-
-  <!-- Social / Preview -->
-  <meta property="og:title" content="Mason Hu — AI × Brain Researcher" />
-  <meta property="og:description" content="Stanford ICME | fMRI, neuroimaging, AI, startup builder." />
-  <meta property="og:image" content="https://masonhyz.github.io/assets/IMG_3425.jpeg" />
+  <meta property="og:title" content="Mason Hu — AI × Neuroimaging" />
+  <meta property="og:description" content="Stanford ICME | fMRI, neuroimaging, AI." />
+  <meta property="og:image" content="https://masonhyz.github.io/assets/IMG_3247.jpeg" />
   <meta property="og:url" content="https://masonhyz.github.io" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/Adobe Express - file.svg">
-
-  <!-- Fonts / CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/Adobe Express - file.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
-
 <body>
+
+  <div class="noise"></div>
+  <div class="grid-overlay"></div>
+
   <header>
-    <a href="index.html"><img src="assets/Adobe Express - file.svg" alt="Logo" class="logo" /></a>
+    <a href="index.html" class="wordmark"><img src="assets/Adobe Express - file.svg" alt="Mason Hu" class="logo" /></a>
     <nav>
       <a href="index.html" class="active">Home</a>
       <a href="freestyle.html">Freestyle</a>
@@ -47,61 +33,135 @@
   </header>
 
   <main>
-    <h1>Mason (Yizhi) Hu</h1>
-    <section class="about">
-      <img src="assets/IMG_3425.jpeg"/>
-      <div>
-        <h2>About Me</h2>
-        <p>Hey what's up!</p>
-        <p>I'm Mason. I'm a ML researcher who likes decoding the brain with data and theory.</p>
-        <p>I grew up in Shanghai, debugged my brain at University of Toronto, and now I'm off to Stanford to overfit on knowledge. </p>
-        <p>On top of that, I'm a nasty freestyle soccer pro, which you can tell from some of my clips on my freestyle page.</p>
+
+    <!-- ── HERO ────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-left fade-in">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          Stanford ICME &nbsp;·&nbsp; AI × Neuroimaging
+        </div>
+        <h1 class="hero-name">hey, i'm mason.</h1>
+        <p class="hero-bio">
+          ML researcher decoding the brain with data and theory.
+          Grew up in Shanghai, debugged my mind at University of Toronto,
+          now overfitting on knowledge at Stanford.
+        </p>
+        <div class="hero-actions">
+          <a href="mailto:masonhu@stanford.edu" class="btn">Email</a>
+          <a href="https://www.linkedin.com/in/masonhu/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+          <a href="https://github.com/masonhyz" target="_blank" rel="noopener" class="btn">GitHub</a>
+          <a href="freestyle.html" class="btn">Freestyle</a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-in">
+        <div class="photo-frame">
+          <img src="assets/IMG_3247.jpeg" alt="Mason Hu" />
+        </div>
       </div>
     </section>
 
-    <section class="info">
-      <h3>Research</h3>
-        <ul class="research-list">
-          <li>
-            <a href="https://github.com/masonhyz/DPE" target="_blank">AU-driven Stable Diffusion</a>: Optimized action unit driven stable diffusion based on InstructPix2Pix backbone on self-generated high-quality face pair datasets.  
-            <span class="supervisor">Supervised by Babak Taati, University Health Network.</span>
-          </li>
-          <li>
-            <a href="https://github.com/lungerjo/DeepEmotion" target="_blank">DeepEmotion</a>: Led a team of 8 to build scalable and interpretable emotional response diagnostic tools from 7T fMRI for mental healthcare.  
-            <span class="supervisor">Supervised by Jurgen Germann, UTMIST.</span>
-          </li>
-          <li>
-            <a href="https://github.com/masonhyz/agv-unet" target="_blank">UNet for KRD</a>: Proposed a novel architecture for medical image segmentation of knee recess distension.  
-            <span class="supervisor">Supervised by Pascal Tyrrell, MiDATA Lab.</span>
-          </li>
-          <li>
-            Neurologically Plausible Neural Networks: Simulated human brain sensorimotor functions through artificial neural networks and EEG data.  
-            <span class="supervisor">Supervised by Matthias Niemeier, CoNSens Lab.</span>
-          </li>
-        </ul>
+    <!-- ── RESEARCH ────────────────────────────── -->
+    <section class="section" id="research">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Research</h2>
+      </div>
 
-      <h3>Contact</h3>
-      <p>
-        If you have any questions, shoot me a message at
-        <a href="mailto:masonhu@stanford.edu" target="_blank">masonhu@stanford.edu</a>.
-        Also connect with me on
-        <a href="https://www.linkedin.com/in/masonhu/" target="_blank" style="vertical-align:middle;">
-          <img src="assets/linkedin.svg" alt="LinkedIn" style="width:20px; height:20px; vertical-align:middle; margin-right:3px; position:relative; top:-2px;"/>
-        </a>
-        <a href="https://github.com/masonhyz" target="_blank" style="vertical-align:middle;">
-          <img src="assets/github.svg" alt="GitHub" style="width:20px; height:20px; vertical-align:middle; margin-right:3px; position:relative; top:-2px;"/>
-        </a>
-        <a href="https://app.beliapp.com/lists/masonhyz" target="_blank" style="vertical-align:middle;">
-          <img src="assets/beli.png" alt="Beli" style="width:20px; height:20px; vertical-align:middle; margin-right:3px; position:relative; top:-2px;"/>
-        </a>
-        <a href="https://my.getslopes.com/app/addFriend/R63G085Ww8" target="_blank" style="vertical-align:middle;">
-          <img src="assets/slopes.png" alt="Slopes" style="width:20px; height:20px; vertical-align:middle; margin-right:3px; position:relative; top:-2px;"/>
-        </a>
-        <a href="https://www.instagram.com/masonhyz" target="_blank" style="vertical-align:middle;">
-          <img src="assets/instagram.svg" alt="Instagram" style="width:20px; height:20px; vertical-align:middle; position:relative; top:-2px;"/>
-        </a>
-      </p>
+      <div class="research-grid">
+        <article class="research-card fade-in">
+          <span class="card-num">01</span>
+          <div class="card-body">
+            <h3><a href="https://github.com/masonhyz/DPE" target="_blank" rel="noopener">AU-driven Stable Diffusion</a></h3>
+            <p>Optimized action unit driven stable diffusion based on InstructPix2Pix backbone on self-generated high-quality face pair datasets.</p>
+            <span class="supervisor">Babak Taati &nbsp;·&nbsp; University Health Network</span>
+          </div>
+        </article>
+
+        <article class="research-card fade-in">
+          <span class="card-num">02</span>
+          <div class="card-body">
+            <h3><a href="https://github.com/lungerjo/DeepEmotion" target="_blank" rel="noopener">DeepEmotion</a></h3>
+            <p>Led a team of 8 to build scalable and interpretable emotional response diagnostic tools from 7T fMRI for mental healthcare.</p>
+            <span class="supervisor">Jurgen Germann &nbsp;·&nbsp; UTMIST</span>
+          </div>
+        </article>
+
+        <article class="research-card fade-in">
+          <span class="card-num">03</span>
+          <div class="card-body">
+            <h3><a href="https://github.com/masonhyz/agv-unet" target="_blank" rel="noopener">UNet for KRD</a></h3>
+            <p>Proposed a novel architecture for medical image segmentation of knee recess distension.</p>
+            <span class="supervisor">Pascal Tyrrell &nbsp;·&nbsp; MiDATA Lab</span>
+          </div>
+        </article>
+
+        <article class="research-card fade-in">
+          <span class="card-num">04</span>
+          <div class="card-body">
+            <h3>Neurologically Plausible Neural Networks</h3>
+            <p>Simulated human brain sensorimotor functions through artificial neural networks and EEG data.</p>
+            <span class="supervisor">Matthias Niemeier &nbsp;·&nbsp; CoNSens Lab</span>
+          </div>
+        </article>
+      </div>
     </section>
+
+    <!-- ── CONNECT ─────────────────────────────── -->
+    <section class="section" id="connect">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Connect</h2>
+      </div>
+
+      <div class="contact-list">
+        <a href="mailto:masonhu@stanford.edu" class="contact-row fade-in-x">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">masonhu@stanford.edu</span>
+        </a>
+        <a href="https://www.linkedin.com/in/masonhu/" target="_blank" rel="noopener" class="contact-row fade-in-x">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">/in/masonhu</span>
+        </a>
+        <a href="https://github.com/masonhyz" target="_blank" rel="noopener" class="contact-row fade-in-x">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">/masonhyz</span>
+        </a>
+        <a href="https://app.beliapp.com/lists/masonhyz" target="_blank" rel="noopener" class="contact-row fade-in-x">
+          <span class="contact-label">Beli</span>
+          <span class="contact-value">masonhyz</span>
+        </a>
+        <a href="https://my.getslopes.com/app/addFriend/R63G085Ww8" target="_blank" rel="noopener" class="contact-row fade-in-x">
+          <span class="contact-label">Slopes</span>
+          <span class="contact-value">R63G085Ww8</span>
+        </a>
+        <a href="https://www.instagram.com/masonhyz" target="_blank" rel="noopener" class="contact-row fade-in-x">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@masonhyz</span>
+        </a>
+      </div>
+    </section>
+
   </main>
+
+  <footer>
+    <span>© 2025 Mason Hu</span>
+    <span>Stanford ICME</span>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.fade-in, .fade-in-x').forEach(el => io.observe(el));
+  </script>
+
 </body>
 </html>
