@@ -2,17 +2,17 @@
    DESIGN TOKENS
    ===================== */
 :root {
-  --bg:           #0d0c0a;
-  --bg-card:      #141310;
-  --bg-hover:     #1c1a16;
-  --border:       rgba(196,168,110,0.1);
-  --border-hover: rgba(196,168,110,0.4);
-  --text:         #e6dfd2;
-  --text-dim:     #a09080;
-  --text-muted:   #635848;
-  --accent:       #c4a86e;
-  --accent-glow:  rgba(196,168,110,0.1);
-  --accent-dim:   rgba(196,168,110,0.4);
+  --bg:           #0a0a0a;
+  --bg-card:      #111111;
+  --bg-hover:     #191919;
+  --border:       rgba(255,255,255,0.07);
+  --border-hover: rgba(255,255,255,0.28);
+  --text:         #e8e8e8;
+  --text-dim:     #888888;
+  --text-muted:   #484848;
+  --accent:       #c8c8c8;
+  --accent-glow:  rgba(255,255,255,0.05);
+  --accent-dim:   rgba(255,255,255,0.3);
   --font-sans:    'Space Grotesk', system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', monospace;
   --header-h:     64px;
@@ -62,8 +62,8 @@ body {
   z-index: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(196,168,110,0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(196,168,110,0.022) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
@@ -221,7 +221,7 @@ footer span {
   line-height: 1.1;
   letter-spacing: -0.04em;
   margin-bottom: 1.75rem;
-  background: linear-gradient(140deg, #f0e8d8 15%, #c4a86e 55%, #8b6b2e 100%);
+  background: linear-gradient(140deg, #ffffff 15%, #aaaaaa 55%, #555555 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -278,7 +278,7 @@ footer span {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(140deg, transparent 50%, rgba(196,168,110,0.1) 100%);
+  background: linear-gradient(140deg, transparent 50%, rgba(255,255,255,0.06) 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -438,7 +438,7 @@ footer span {
   letter-spacing: -0.04em;
   line-height: 0.9;
   margin: 1rem 0 1.5rem;
-  background: linear-gradient(140deg, #f0e8d8 15%, #c4a86e 55%, #8b6b2e 100%);
+  background: linear-gradient(140deg, #ffffff 15%, #aaaaaa 55%, #555555 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
